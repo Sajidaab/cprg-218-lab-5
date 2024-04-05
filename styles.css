@@ -1,0 +1,77 @@
+/* Global styles */
+body {
+    font-family: 'Kanit', Arial, sans-serif; /* Added Kanit font */
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Added position relative */
+}
+
+.pokemon-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Kanit', Arial, sans-serif; /* Added Kanit font */
+}
+
+input[type="text"], select {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Pokémon card styles */
+.pokemon-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pokemon-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.pokemon-card p {
+    margin: 5px 0;
+}
+
+/* Grid container for Pokémon cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
